@@ -1,0 +1,18 @@
+<div class="dsc-navigation">
+  <div class="col-md-8">
+    <h4 style="color: white;">In section {{name}}</h4>
+  </div>
+  <div class="container col-md-6">
+    <form #formSearch="ngForm" (ngSubmit)="Search(formSearch)" style="display:flex;">
+      <div class="form-group col-md-4">
+        <input type="text" id="name_search" name="name_search" class="form-control"
+        placeholder="Name"  (ngModel)="name_search">
+      </div>
+      <div class="col-md-2">
+        <button type="submit" class="btn btn-lg btn-primary btn-block">Search</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

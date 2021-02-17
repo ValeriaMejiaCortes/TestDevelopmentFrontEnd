@@ -1,0 +1,29 @@
+<div class="container">
+  <h1 class="text-center" style="margin-bottom: 60px; margin-top: 60px;">User <b>{{user.login}}</b> </h1>
+  <div class="row justify-content-center">
+    <img src={{user.avatar_url}} width="300" height="300" class="img-thumbnail" alt="...">
+    <div class="col-sm-4">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <h5 class="card-title">Id {{user.id}}</h5>
+        </li>
+        <li class="list-group-item">
+          <h6 class="card-subtitle mb-2 text-muted">Location</h6>
+          {{user.location}}
+        </li>
+        <li class="list-group-item">
+          <h6 class="card-subtitle mb-2 text-muted">Repository Url</h6>
+          {{user.repos_url}}
+        </li>
+        <li class="list-group-item">
+          <h6 class="card-subtitle mb-2 text-muted">Created</h6>
+          {{user.created_at}}
+        </li>
+        <li class="list-group-item">
+          <h6 class="card-subtitle mb-2 text-muted">Updated</h6>
+          {{user.updated_at}}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

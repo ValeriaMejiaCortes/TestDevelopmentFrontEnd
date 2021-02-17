@@ -1,0 +1,23 @@
+.dsc-navigation{
+  height: 80px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background: #5bc0de;
+}
+
+
+* {box-sizing: border-box; }
+
+body{
+  font-family: "Montserrat", sans-serif;
+  overflow: hidden;
+}
+
+
+i{
+  position: relative;
+  left: -37px;
+  color: #8233;
+}
